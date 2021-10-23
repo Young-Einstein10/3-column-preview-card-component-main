@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  line-height: 1.6;
+  font-family: "Lexend Deca", sans-serif;
+  height: 100vh;
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  max-width: 900px;
+  display: flex;
+  height: 500px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: hsl(0, 0%, 95%);
+}
+
+article p {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.bright-orange {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.light-cyan {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.dark-cyan {
+  background-color: hsl(179, 100%, 13%);
+}
+
+article {
+  padding: 3rem;
+}
+
+article h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+article p {
+  margin-bottom: 3rem;
+  font-size: 14px;
+}
+
+article button {
+  background-color: hsl(0, 0%, 95%);
+  border: 0;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+article:nth-child(1) button {
+  color: hsl(31, 77%, 52%);
+}
+
+article button:hover {
+    background-color: transparent;
+    border: solid 2px hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+button:nth-child(2) button {
+  color: hsl(184, 100%, 22%);
+}
+
+button:nth-child(3) button {
+  color: hsl(179, 100%, 13%);
+}
