@@ -1,9 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
 
+html {
+  box-sizing: border-box;
+}
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
@@ -15,6 +24,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 7%;
 }
 
 main {
@@ -72,6 +82,7 @@ article button {
   border-radius: 50px;
   cursor: pointer;
   font-size: 15px;
+  flex-shrink: 0;
 }
 
 article:nth-child(1) button {
@@ -79,9 +90,9 @@ article:nth-child(1) button {
 }
 
 article button:hover {
-    background-color: transparent;
-    border: solid 2px hsl(0, 0%, 95%);
-    color: hsl(0, 0%, 95%);
+  background-color: transparent;
+  border: solid 2px hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
 }
 
 button:nth-child(2) button {
@@ -90,4 +101,38 @@ button:nth-child(2) button {
 
 button:nth-child(3) button {
   color: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    display: block;
+    height: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  main {
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    display: block;
+    height: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  main {
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 768px)  and (max-width: 880px) {
+  article {
+    padding: 2rem;
+  }
 }
